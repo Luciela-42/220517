@@ -9,5 +9,5 @@ public:
 	WildBoar();
 	virtual ~WildBoar();
 
-	void Move();
+	virtual void Move() override;
 };

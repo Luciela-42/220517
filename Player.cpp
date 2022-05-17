@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Player::Player() : HealthPoint(0), MagicPoint(0), Gold(0)
+Player::Player() : HP(0), MP(0), Gold(0)
 {
 
 	std::cout << "Player 생성자" << std::endl;
@@ -11,8 +11,8 @@ Player::Player() : HealthPoint(0), MagicPoint(0), Gold(0)
 
 Player::Player(int NewHP, int NewMP, int NewGold)
 {
-	HealthPoint = NewHP;
-	MagicPoint = NewMP;
+	HP = NewHP;
+	MP = NewMP;
 	Gold = NewGold;
 
 	cout << "Player 생성자 있음" << endl;
@@ -20,11 +20,12 @@ Player::Player(int NewHP, int NewMP, int NewGold)
 
 Player::~Player()
 {
-	std::cout << "Player 소멸자" << std::endl;
+	cout << "Player 소멸자" << endl;
 }
 
 void Player::Move()
 {
+	cout << "Player 이동" << endl;
 }
 
 void Player::Attack()

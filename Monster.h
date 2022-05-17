@@ -1,17 +1,17 @@
 #pragma once
+#include"Character.h"
+
 using namespace std;
 
-class Monster
+class Monster : public Character
 {
 public:
 	Monster();
 	virtual ~Monster();
 
-	int HealtPoint;
-	int Gold;
+	virtual void Move() override;
+	virtual void Attack() override;
 
-	virtual void Move();
-	virtual void Attack();
 	virtual void DropGold();
 };
 
